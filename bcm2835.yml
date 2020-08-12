@@ -5,6 +5,8 @@ GENERATOR:
   Includes: ["bcm2835.h"]
   Options:
     SafeStrings: true
+  FlagGroups:
+    - {name: CFLAGS, flags: ["-I.","-DDEBUG","-I${SRCDIR}/"]}
 
 PARSER:
   SourcesPaths: ["bcm2835.h"]
